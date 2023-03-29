@@ -1,7 +1,8 @@
 # Simply-Manageable
 
 ## Deployment
- Back end - Heroku: <\n>
+ Back end - Heroku: 
+ <br/>
  Front end - Netlify: 
 
 ## Description
