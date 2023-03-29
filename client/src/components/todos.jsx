@@ -168,10 +168,6 @@ function TodoList() {
     function handleMove(e) {
         let mover = e.target.value
         let moverId = e.target.name
-
- //       if (mover==='ignore'){
-   //         return
-     //   }
         
         for (let i = 0; i < todos.length; i++) {
             if ((todos[i]._id === moverId)&&(mover !== 'ignore')){
@@ -184,6 +180,7 @@ function TodoList() {
                     dueDate: todos[i].dueDate
                 };
                 axios.put(`https://simply-managable.herokuapp.com/api/todo/${moverId}`,newTodo)
+                axios.get("https://simply-managable.herokuapp.com/api/todo")
                 console.log(newTodo)
                 if (render) {
                     setRender(false)
