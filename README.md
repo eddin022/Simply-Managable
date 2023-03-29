@@ -1,8 +1,8 @@
 # Simply-Manageable
 
 ## Deployment
-Back end - Heroku:
-Front end - Netlify: 
+####Back end - Heroku:
+####Front end - Netlify: 
 
 ## Description
 Simple task management React application with a Kanban-like structure. Built to work on developing an Express back end api. 
