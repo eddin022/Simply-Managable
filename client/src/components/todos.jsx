@@ -28,7 +28,7 @@ function TodoList() {
         data.dueDate= dueDate.value;
         axios({
             method: 'post',
-            url:'http://localhost:8000/api/todo',
+            url:'https://simply-managable.herokuapp.com/api/todo',
             data:{
                 title: data.title,
                 description: data.description,
@@ -37,7 +37,7 @@ function TodoList() {
             }
         });
         axios
-                .get("http://localhost:8000/api/todo")
+                .get("https://simply-managable.herokuapp.com/api/todo")
                 .then((res) => {
                     console.log(res.data);
                     setTodos(res.data);
@@ -61,7 +61,7 @@ function TodoList() {
     useEffect(
         function () {
             axios
-                .get("http://localhost:8000/api/todo")
+                .get("https://simply-managable.herokuapp.com/api/todo")
                 .then((res) => {
                     console.log(res.data);
                     setTodos(res.data);
@@ -160,7 +160,7 @@ function TodoList() {
     function handleDelete(e) {
         console.log('BELOW')
         console.log(todos)
-        axios.delete(`http://localhost:8000/api/todo/${e.target.name}`);
+        axios.delete(`https://simply-managable.herokuapp.com/api/todo/${e.target.name}`);
         setTodos((data) => {
             return data.filter((todo) => todo._id !== e.target.name);
         });
@@ -184,7 +184,7 @@ function TodoList() {
                     list: mover,
                     dueDate: todos[i].dueDate
                 };
-                axios.put(`http://localhost:8000/api/todo/${moverId}`,newTodo)
+                axios.put(`https://simply-managable.herokuapp.com/api/todo/${moverId}`,newTodo)
                 console.log(newTodo)
                 if (render) {
                     setRender(false)
