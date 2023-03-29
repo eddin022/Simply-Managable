@@ -182,10 +182,10 @@ function TodoList() {
                 axios.put(`https://simply-managable.herokuapp.com/api/todo/${moverId}`,newTodo)
                 axios.get("https://simply-managable.herokuapp.com/api/todo")
                 console.log(newTodo)
-                if (render) {
-                    setRender(false)
+                if (update) {
+                    setUpdate(false)
                 }else{
-                    setRender(true)
+                    setUpdate(true)
                 }
             }  
         }
