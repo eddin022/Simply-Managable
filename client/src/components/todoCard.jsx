@@ -17,7 +17,7 @@ function TodoCard({ data, handleDelete, handleMove }) {
                 </button>
             </div>
             <div>
-                <select name={_id} className='dropdown' id={_id} onClick={handleMove}>
+                <select name={_id} class='browser-default' className='dropdown' id={_id} onClick={handleMove}>
                     <option value='ignore'>Move</option>
                     <option value='Todo'>Todo</option>
                     <option value='InProgress'>In Progress</option>
