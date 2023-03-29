@@ -169,12 +169,12 @@ function TodoList() {
         let mover = e.target.value
         let moverId = e.target.name
 
-        if (mover==='ignore'){
-            return
-        }
+ //       if (mover==='ignore'){
+   //         return
+     //   }
         
         for (let i = 0; i < todos.length; i++) {
-            if (todos[i]._id === moverId){
+            if ((todos[i]._id === moverId)&&(mover !== 'ignore')){
                 todos[i].list=mover
     
                 const newTodo = {
@@ -189,7 +189,7 @@ function TodoList() {
                     setRender(false)
                 }else{
                     setRender(true)
-                } 
+                }
             }  
         }
     };
