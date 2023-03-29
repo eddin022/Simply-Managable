@@ -222,7 +222,7 @@ function TodoList() {
     return (
         <div className='App'>
             <div>
-                <h1 className="main-header">Simply Managable</h1>
+                <h1 className="main-header">Simply Manageable</h1>
             </div>
             <div className="flex-container">
                 <form className='form' onSubmit={handleSubmit}>
