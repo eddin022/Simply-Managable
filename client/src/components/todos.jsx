@@ -7,10 +7,8 @@ import '../App.css';
 
 function TodoList() {
     const [todos,setTodos] = useState([]);
-    const [postTodo,setPostTodo] = useState({});
     const [data,setData] = useState({ title: '', description: '', list:''});
     const [update,setUpdate] = useState(false);
-    const [render,setRender] = useState(true);
     const [formStatus,setFormStatus] = useState({
         button: true,
         inTodo: false,
@@ -186,10 +184,10 @@ function TodoList() {
                 };
                 axios.put(`https://simply-managable.herokuapp.com/api/todo/${moverId}`,newTodo)
                 console.log(newTodo)
-                if (render) {
-                    setRender(false)
+                if (update) {
+                    setUpdate(false)
                 }else{
-                    setRender(true)
+                    setUpdate(true)
                 } 
             }  
         }
