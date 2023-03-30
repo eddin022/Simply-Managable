@@ -180,7 +180,7 @@ function TodoList() {
                     dueDate: todos[i].dueDate
                 };
                 axios.put(`https://simply-managable.herokuapp.com/api/todo/${moverId}`,newTodo)
-                axios.get("https://simply-managable.herokuapp.com/api/todo")
+                //axios.get("https://simply-managable.herokuapp.com/api/todo")
                 console.log(newTodo)
                 if (update) {
                     setUpdate(false)
