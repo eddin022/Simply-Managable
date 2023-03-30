@@ -1,9 +1,9 @@
 # Simply-Manageable
 
 ## Deployment
- Back end - Heroku: 
+ Back end - Heroku (eco): https://simply-managable.herokuapp.com/api/todo
  <br/>
- Front end - Netlify: 
+ Front end - Netlify: https://simplymanageable.netlify.app/
 
 ## Description
 Simple task management React application with a Kanban-like structure. Built to work on developing an Express back end api. 
