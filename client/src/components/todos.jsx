@@ -157,8 +157,6 @@ function TodoList() {
     };
 
     function handleDelete(e) {
-        console.log('BELOW')
-        console.log(todos)
         axios.delete(`https://simply-managable.herokuapp.com/api/todo/${e.target.name}`);
         setTodos((data) => {
             return data.filter((todo) => todo._id !== e.target.name);
@@ -190,6 +188,11 @@ function TodoList() {
             }  
         }
     };
+
+    function handleEdit(e) {
+        console.log(e.target.name)
+        console.log('ABOVE!!')
+    }
 
     const current = new Date();
     const date1 =  `${current.getMonth()+1}/${current.getDate()}`;
@@ -260,6 +263,7 @@ function TodoList() {
                                 data={data}
                                 handleDelete={handleDelete}
                                 handleMove={handleMove}
+                                handleEdit={handleEdit}
                             />
                         ))}                        
                     </ul>
@@ -272,6 +276,7 @@ function TodoList() {
                                 data={data}
                                 handleDelete={handleDelete}
                                 handleMove={handleMove}
+                                handleEdit={handleEdit}
                             />
                         ))}                        
                     </ul>
@@ -284,6 +289,7 @@ function TodoList() {
                                 data={data}
                                 handleDelete={handleDelete}
                                 handleMove={handleMove}
+                                handleEdit={handleEdit}
                             />
                         ))}                        
                     </ul> 

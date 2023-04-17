@@ -131,12 +131,11 @@ html{
 }
 
 .button{
-  width: 60px;
   text-align: left;
 }
 
 .dropdown{
-  width: 60px;
+  width: 55px;
 }
 
 .main-header{
@@ -177,4 +176,25 @@ html{
   padding-right: 10px;
   margin: 5px;
   text-align: left;
+}
+
+.sleepyStatus{
+  text-align: center;
+  flex-grow:1;
+  position:fixed;
+  bottom:0;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  margin: 5px;
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
 }
