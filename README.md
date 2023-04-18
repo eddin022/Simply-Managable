@@ -8,7 +8,7 @@
  Front end - Netlify: https://simplymanageable.netlify.app/
 
 ## Description
-Simple task management React application with a Kanban-like structure. Built to work on developing an Express back end api. 
+Simple task management React application with a Kanban-like structure. Built on an Express back end api. Back end sleeps when inactive to conserve funds.
 
 ## Tech-stack
 Developed with the MERN stack 
